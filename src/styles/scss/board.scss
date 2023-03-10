@@ -1,0 +1,42 @@
+.flex-content  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+$btn-background-color: #201A19;
+$btn-text-color: #ffffff;
+$postcard-background-color: #FFF7E7;
+.billboard {
+  display: flex;
+  width: 100%;
+  margin-top: 2%;
+  .billboard-apply {
+    flex: 2;
+    align-items: flex-start;
+    @extend .flex-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    .btn-apply-account {
+      background-color:  $btn-background-color;
+      color: $btn-text-color;
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
+  .billboard-info {
+    flex: 2;
+    background-color: $postcard-background-color;
+    align-items: center;
+    @extend .flex-content;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .billboard {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .billboard {
+    flex-direction: row;
+  }
+}

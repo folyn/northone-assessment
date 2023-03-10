@@ -1,0 +1,15 @@
+$text-size: 30px;
+.highlight{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+  p {
+    font-size: $text-size;
+  }
+  span {
+    font-size: $text-size;
+    color: #BDB6B4;
+  }
+}

@@ -1,0 +1,33 @@
+.info {
+  background-color: #FFF7E7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  .main-heading {
+    margin-top: 5%;
+    font-size: 30px;
+  }
+  .sub-heading {
+    font-size: 20px;
+  }
+  .addtional-info {
+    display: flex;
+    flex-direction: row;
+    .transfer{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        font-size: 20px;
+      }
+      .fee-value {
+        margin-top: 8%;
+      }
+    }
+  }
+}
